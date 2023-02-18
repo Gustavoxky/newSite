@@ -21,7 +21,7 @@ const Box = (props: IBoxProps) => {
   return (
     <mesh ref={BoxRef}>
       <boxBufferGeometry args={[0.5, 0.5, 0.5]} />
-      <meshStandardMaterial color="#2343ad" />
+      <meshStandardMaterial color="#7623ad" />
       <OrbitControls/>
     </mesh>
   );
