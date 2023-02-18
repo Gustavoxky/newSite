@@ -7,5 +7,5 @@
         "moduleResolution": "node",
         "strict": true
     },
-    "include": ["**/*.ts", "client.tsx"]
+    "include": ["**/*.ts", "main.tsx"]
 }
