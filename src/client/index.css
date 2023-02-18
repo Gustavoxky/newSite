@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;  
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(47, 28, 221, 0.63), rgba(137, 25, 165, 0.63)) ;
+  }
+  
+  .Scene {
+    width: 100vw;
+    height: 50vh;
+  }
+  
