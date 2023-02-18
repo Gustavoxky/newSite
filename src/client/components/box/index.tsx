@@ -1,3 +1,4 @@
+import { OrbitControls } from "@react-three/drei";
 import { MeshProps, useFrame } from "@react-three/fiber";
 import React from "react";
 import { useRef } from "react";
@@ -20,7 +21,8 @@ const Box = (props: IBoxProps) => {
   return (
     <mesh ref={BoxRef}>
       <boxBufferGeometry args={[0.5, 0.5, 0.5]} />
-      <meshStandardMaterial color="#32216e" />
+      <meshStandardMaterial color="#2343ad" />
+      <OrbitControls/>
     </mesh>
   );
 };

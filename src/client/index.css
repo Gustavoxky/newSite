@@ -4,11 +4,11 @@ body {
     justify-content: center;  
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(47, 28, 221, 0.63), rgba(137, 25, 165, 0.63)) ;
+    background-image: linear-gradient(rgb(24, 18, 80), rgb(58, 12, 70)) ;
   }
   
   .Scene {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
   }
   

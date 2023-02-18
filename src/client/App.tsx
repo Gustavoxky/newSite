@@ -4,7 +4,10 @@ import Scene from './components/scene'
 const App = () => {
 
   return (
+    <div className="Scene">
       <Scene/>
+    </div>
+      
   )
 }
 
