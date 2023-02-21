@@ -13,14 +13,14 @@ const Box = (props: IBoxProps) => {
 
   useFrame(() => {
     if (BoxRef.current) {
-      BoxRef.current.rotation.x += 0.01;
+      // BoxRef.current.rotation.x += 0.01;
       BoxRef.current.rotation.y += 0.01;
     }
   });
 
   return (
     <group>
-      <mesh ref={BoxRef}>
+      <mesh position={[0, -1, 0]} ref={BoxRef}>
       <mesh position={[-0.1, -0.3, -0.1]}>
       <cylinderBufferGeometry args={[0.05, 0.1, 0.15, 32, 1, true]} />
       <meshStandardMaterial color="#4c4452" />
