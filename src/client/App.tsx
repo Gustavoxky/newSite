@@ -1,12 +1,14 @@
 import React from "react"
 import Scene from './components/scene'
+import Header from './components/Header'
 
 const App = () => {
 
   return (
-    <div className="Scene">
+    <>
+      <Header/>
       <Scene/>
-    </div>
+    </>
       
   )
 }
