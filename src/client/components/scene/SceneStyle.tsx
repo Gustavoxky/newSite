@@ -2,5 +2,5 @@ import styled from 'styled-components'
 
 export const SceneSC = styled.div`
     display: flex;
-    height: 500px;
+    height: 550px;
 `

@@ -1,21 +1,21 @@
 import React from "react"
-import {HeaderSC, MenuContentSC, MenuSC} from './headerStyled'
+import {HeaderSC, LinkSC, MenuContentSC, MenuSC} from './headerStyled'
 
 const Header = () => {
     return (
         <HeaderSC>
             <MenuSC>
                 <MenuContentSC>
-                    <h1>logo</h1>
+                    <LinkSC href=''>logo</LinkSC>
                 </MenuContentSC>
                 <MenuContentSC>
-                    <h1>Home</h1>
+                    <LinkSC href='https://github.com/Gustavoxky'>Github</LinkSC>
                 </MenuContentSC>
                 <MenuContentSC>
-                    <h1>about</h1>
+                    <LinkSC href='https://www.linkedin.com/in/gustavo-correia-dos-santos-6039641a6/'>LinkedIn</LinkSC>
                 </MenuContentSC>
                 <MenuContentSC>
-                    <h1>contact</h1>
+                    <LinkSC href=''>Codepen</LinkSC>
                 </MenuContentSC>
                 
             </MenuSC>
