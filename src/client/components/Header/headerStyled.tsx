@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const HeaderSC = styled.div`
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 50px;
     display: flex;
     justify-content: flex-end;
     width: 100vw;
@@ -33,6 +36,6 @@ export const LinkSC = styled.a`
     font-size: 20px;
     font-family: sans-serif;
     &:hover {
-        color: #7b1899;
+        color: #9d1dc4;
     }
 `

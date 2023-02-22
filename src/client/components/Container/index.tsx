@@ -8,8 +8,6 @@ export const Container = () => {
             <ContainerSC/>
             <ContainerSC/>
             <ContainerSC/>
-            <ContainerSC/>
-
         </ContainerWrapper>
     )
 }
