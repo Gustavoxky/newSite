@@ -3,6 +3,6 @@ body {
     display: flex;
     justify-content: center;  
     width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(rgb(24, 18, 80), rgb(54, 110, 214)) ;
+    height: 100%;
+    background-color: #0f0e28 ;
   }

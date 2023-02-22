@@ -27,3 +27,12 @@ export const MenuContentSC = styled.li`
             box-shadow: 0 0 0 3px #8257E5;
         }
 `
+export const LinkSC = styled.a`
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    &:hover {
+        color: #7b1899;
+    }
+`
