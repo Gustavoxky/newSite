@@ -5,19 +5,19 @@ export const ContainerSC = styled.div`
     width: 300px;
     height: 150px;
     border-radius: 10px;
-    background-color: #2c2c41d3;
+    background-color: #7474964c;
     margin: 10px;
     &:hover {
         cursor: pointer;
         width: 310px;
         height: 160px;
-        background-color: #181829;
-        box-shadow: 0 0 3px 3px #1b1b1d;
+        background-color: #31107e;
     }
 `
 export const ContainerWrapper = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0;
     position: absolute;
     width: 100vw;
