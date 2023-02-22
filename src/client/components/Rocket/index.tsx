@@ -178,7 +178,7 @@ const Rocket = (props: IRocketProps) => {
       <sphereGeometry args={[0.355, 32, 16 ]} />
       <meshStandardMaterial color="#d0c5d4" />
       </mesh>
-      <Grid sectionColor={-5} cellColor='#565357' renderOrder={-1} position={[0, -1.85, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} fadeDistance={20} />
+      <Grid sectionColor={-5} cellColor='#565357' renderOrder={-1} position={[0, -1.2, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} fadeDistance={20} />
 
       <OrbitControls/>
       </mesh>
