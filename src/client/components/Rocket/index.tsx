@@ -1,4 +1,4 @@
-import { OrbitControls } from "@react-three/drei";
+import { Grid, OrbitControls } from "@react-three/drei";
 import { MeshProps, useFrame } from "@react-three/fiber";
 import React from "react";
 import { useRef } from "react";
@@ -14,7 +14,7 @@ const Rocket = (props: IRocketProps) => {
   useFrame(() => {
     if (BoxRef.current) {
       // BoxRef.current.rotation.x += 0.01;
-      BoxRef.current.rotation.y += 0.01;
+      BoxRef.current.rotation.y += 0.005;
     }
   });
 
@@ -178,6 +178,8 @@ const Rocket = (props: IRocketProps) => {
       <sphereGeometry args={[0.355, 32, 16 ]} />
       <meshStandardMaterial color="#d0c5d4" />
       </mesh>
+      <Grid sectionColor={-5} cellColor='#565357' renderOrder={-1} position={[0, -1.85, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} fadeDistance={20} />
+
       <OrbitControls/>
       </mesh>
       
