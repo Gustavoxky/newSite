@@ -2,7 +2,7 @@ import { Grid, OrbitControls } from "@react-three/drei";
 import { MeshProps, useFrame } from "@react-three/fiber";
 import React from "react";
 import { useRef } from "react";
-import THREE, { Mesh } from "three";
+import THREE, { DoubleSide, Mesh } from "three";
 
 interface IRocketProps {
   BoxRef?: React.MutableRefObject<Mesh>;
@@ -178,7 +178,12 @@ const Rocket = (props: IRocketProps) => {
       <sphereGeometry args={[0.355, 32, 16 ]} />
       <meshStandardMaterial color="#d0c5d4" />
       </mesh>
+      <mesh  rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.2, 0]}>
+        <planeBufferGeometry  args={[20, 20]} />
+        <meshBasicMaterial side={DoubleSide} color="#98959b" />
+      </mesh>
       <Grid sectionColor={-5} cellColor='#565357' renderOrder={-1} position={[0, -1.2, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} fadeDistance={20} />
+
 
       <OrbitControls/>
       </mesh>

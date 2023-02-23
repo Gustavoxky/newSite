@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ContainerSC = styled.div`
     display: flex;
-    width: 300px;
+    width: 10rem;
     height: 150px;
     border-radius: 10px;
     background-color: #7474964c;
@@ -11,7 +11,7 @@ export const ContainerSC = styled.div`
         cursor: pointer;
         width: 310px;
         height: 160px;
-        background-color: #31107e;
+        background-color: #24212b;
     }
 `
 export const ContainerWrapper = styled.div`
@@ -20,7 +20,7 @@ export const ContainerWrapper = styled.div`
     justify-content: center;
     margin: 0;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 200px;
     top: 400px;
 `

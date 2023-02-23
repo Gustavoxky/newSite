@@ -1,4 +1,5 @@
 import React from "react"
+import { Input } from "../Input"
 import {HeaderSC, LinkSC, MenuContentSC, MenuSC} from './headerStyled'
 
 const Header = () => {

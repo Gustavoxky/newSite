@@ -4,10 +4,10 @@ import { ContainerSC, ContainerWrapper } from "./containerStyle"
 export const Container = () => {
     return (
         <ContainerWrapper>
-            <ContainerSC/>
-            <ContainerSC/>
-            <ContainerSC/>
-            <ContainerSC/>
+            <ContainerSC onClick={() => {console.log('click')}}/>
+            <ContainerSC onClick={() => {console.log('click')}}/>
+            <ContainerSC onClick={() => {console.log('click')}}/>
+            <ContainerSC onClick={() => {console.log('click')}}/>
         </ContainerWrapper>
     )
 }
