@@ -4,6 +4,8 @@ import { ITextProps } from "./types"
 
 export const Text = (props: ITextProps) => {
     return (
-        <TextSC/>
+        <TextSC {...props}>
+            {props.content}
+        </TextSC>
     )
 }

@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const InputWrapper = styled.div`
     display: flex;
     position: absolute;
-    top: 80px;
-    right: 400px;
+    top: 4em;
+    right: 16em;
 
 `
 

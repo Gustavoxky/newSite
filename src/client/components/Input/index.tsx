@@ -6,10 +6,8 @@ import {Text} from '../Text'
 export const Input = () => {
     return (
         <InputWrapper>
-            <Button>
-                <Text content='enviar'/>
-                   
-                
+            <Button onClick={() => {}}>
+                <Text content={"Enviar"}/> 
             </Button>
             <InputSC placeholder="pergunte-me"/>
         </InputWrapper>

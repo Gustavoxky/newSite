@@ -1,3 +1,3 @@
 export interface ITextProps {
-    content: string
+    content: string 
 }
