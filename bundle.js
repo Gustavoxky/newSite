@@ -60,8 +60,8 @@
 `,gw=()=>t.createElement(mw,null,t.createElement(pw,{onClick:()=>{console.log("click")}}),t.createElement(pw,{onClick:()=>{console.log("click")}}),t.createElement(pw,{onClick:()=>{console.log("click")}}),t.createElement(pw,{onClick:()=>{console.log("click")}})),vw=iw.div`
     display: flex;
     position: absolute;
-    top: 80px;
-    right: 400px;
+    top: 4em;
+    right: 16em;
 
 `,yw=iw.input`
     appearance: none;
@@ -94,8 +94,8 @@
         height: 55px;
     }
 
-`,xw=e=>t.createElement(bw,Object.assign({},e)),_w=iw.p`
+`,xw=e=>t.createElement(bw,Object.assign({},e)),_w=iw.text`
     font-size: 24px;
     color: #c9bad6;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-`,ww=e=>t.createElement(_w,null),Sw=()=>t.createElement(vw,null,t.createElement(xw,null,t.createElement(ww,{content:"enviar"})),t.createElement(yw,{placeholder:"pergunte-me"}));var Mw=n(379),Ew=n.n(Mw),Tw=n(795),Cw=n.n(Tw),Aw=n(569),Pw=n.n(Aw),Lw=n(565),kw=n.n(Lw),Rw=n(216),Iw=n.n(Rw),Dw=n(589),zw=n.n(Dw),Nw=n(578),Ow={};Ow.styleTagTransform=zw(),Ow.setAttributes=kw(),Ow.insert=Pw().bind(null,"head"),Ow.domAPI=Cw(),Ow.insertStyleElement=Iw(),Ew()(Nw.Z,Ow),Nw.Z&&Nw.Z.locals&&Nw.Z.locals,r.createRoot(document.getElementById("root")).render(t.createElement(t.StrictMode,null,t.createElement((()=>t.createElement(t.Fragment,null,t.createElement(fw,null),t.createElement(lw,null),t.createElement(gw,null),t.createElement(Sw,null))),null)))})()})();
+`,ww=e=>t.createElement(_w,Object.assign({},e),e.content),Sw=()=>t.createElement(vw,null,t.createElement(xw,{onClick:()=>{}},t.createElement(ww,{content:"Enviar"})),t.createElement(yw,{placeholder:"pergunte-me"}));var Mw=n(379),Ew=n.n(Mw),Tw=n(795),Cw=n.n(Tw),Aw=n(569),Pw=n.n(Aw),Lw=n(565),kw=n.n(Lw),Rw=n(216),Iw=n.n(Rw),Dw=n(589),zw=n.n(Dw),Nw=n(578),Ow={};Ow.styleTagTransform=zw(),Ow.setAttributes=kw(),Ow.insert=Pw().bind(null,"head"),Ow.domAPI=Cw(),Ow.insertStyleElement=Iw(),Ew()(Nw.Z,Ow),Nw.Z&&Nw.Z.locals&&Nw.Z.locals,r.createRoot(document.getElementById("root")).render(t.createElement(t.StrictMode,null,t.createElement((()=>t.createElement(t.Fragment,null,t.createElement(fw,null),t.createElement(lw,null),t.createElement(gw,null),t.createElement(Sw,null))),null)))})()})();
