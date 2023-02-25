@@ -43,7 +43,7 @@ export const LinkSC = styled.a`
 `
 
 export const LogoSC = styled(Title)`
-    font-size: 50px;
+    font-size: 35px;
     color: #610777;
     position: relative;
     right: 800px;

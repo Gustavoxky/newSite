@@ -18,7 +18,7 @@ interface INuvemProps {
     });
   
     return (
-        <group>
+        <group position={[3, 2, 0]}>
             <mesh ref={BoxRef}>
                 <mesh position={[1.5, 1.8, 1.5]} >
                 <sphereGeometry args={[0.55, 32, 16 ]} />

@@ -19,7 +19,7 @@ interface ISumProps {
   
     return (
         <mesh ref={BoxRef} 
-            position={[-3.5, 2.5, 0.005]}>
+            position={[-4.5, 4.5, 0.005]}>
                 <meshStandardMaterial />
                 <sphereGeometry args={[0.25, 32, 16 ]} />
                 <meshStandardMaterial color="#fffc3c" />

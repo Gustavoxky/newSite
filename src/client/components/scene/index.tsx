@@ -1,15 +1,16 @@
 import { ContactShadows, PresentationControls } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import React from "react"
-import Rocket from "../Rocket"
+import {Rocket} from "../Rocket"
 import {SceneSC} from './SceneStyle'
 import {Nuvem} from '../nuvem'
 import {Sum} from '../sum'
+import { Floor } from "../floor"
 
 const Scene = () => {
     return (
       <SceneSC>
-        <Canvas shadows dpr={[1, 2]} camera={{ position: [8, 3.5, 6], fov: 50 }}>
+        <Canvas shadows dpr={[1, 2]} camera={{ position: [6, 4.5, 10], fov: 50 }}>
         <ambientLight intensity={0.5}/>
         <spotLight position={[-3.5, 2.5, 0.005]} angle={360} penumbra={1} shadow-mapSize={[512, 512]} castShadow />
         <PresentationControls
@@ -20,6 +21,7 @@ const Scene = () => {
           polar={[-Math.PI / 3, Math.PI / 3]}
           azimuth={[-Math.PI / 1.4, Math.PI / 2]}>
             <Rocket/>
+            <Floor/>
         </PresentationControls>
         <Nuvem/>
         <Sum/>
