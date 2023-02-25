@@ -9,7 +9,7 @@ import {Sum} from '../sum'
 const Scene = () => {
     return (
       <SceneSC>
-        <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 1, 6], fov: 50 }}>
+        <Canvas shadows dpr={[1, 2]} camera={{ position: [8, 3.5, 6], fov: 50 }}>
         <ambientLight intensity={0.5}/>
         <spotLight position={[-3.5, 2.5, 0.005]} angle={360} penumbra={1} shadow-mapSize={[512, 512]} castShadow />
         <PresentationControls

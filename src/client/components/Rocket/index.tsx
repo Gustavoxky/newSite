@@ -3,6 +3,8 @@ import { MeshProps, useFrame } from "@react-three/fiber";
 import React from "react";
 import { useRef } from "react";
 import THREE, { DoubleSide, Mesh } from "three";
+import {Smoke} from '../smoke'
+import {Floor} from '../floor'
 
 interface IRocketProps {
   BoxRef?: React.MutableRefObject<Mesh>;
@@ -20,7 +22,7 @@ const Rocket = (props: IRocketProps) => {
 
   return (
     <group>
-      <mesh position={[0, -1, 0]} ref={BoxRef}>
+      <mesh position={[3, -1, 0]} ref={BoxRef}>
       <mesh position={[-0.1, -0.3, -0.1]}>
       <cylinderBufferGeometry args={[0.05, 0.1, 0.15, 32, 1, true]} />
       <meshStandardMaterial color="#4c4452" />
@@ -35,7 +37,7 @@ const Rocket = (props: IRocketProps) => {
     </mesh>
     <mesh position={[0, 0.5, 0]}>
     <cylinderBufferGeometry args={[0.2, 0.2, 1.5, 32, 1, true]} />
-      <meshStandardMaterial color="#c97c0a" />
+      <meshStandardMaterial color="#630ac9" />
     </mesh>
     <mesh position={[0, 2.07, 0]}>
       <cylinderBufferGeometry args={[0.05, 0.23, 0.45, 32, 1, true]} />
@@ -85,110 +87,15 @@ const Rocket = (props: IRocketProps) => {
       <sphereGeometry args={[0.05, 32, 16 ]} />
       <meshStandardMaterial color="#dbd2e0" />
     </mesh>
+      
+      <Smoke/>
+      <Floor/>
+      <OrbitControls enableZoom={false}/>
+      </mesh>
 
-      <mesh position={[0, -0.59, 0]} >
-      <sphereGeometry args={[0.25, 32, 16 ]} />
-      <meshStandardMaterial color="#b0abb3" />
-      </mesh>
-      <mesh position={[0.3, -0.855, 0.25]} >
-      <sphereGeometry args={[0.325, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[0.5, -0.895, 0.25]} >
-      <sphereGeometry args={[0.325, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.5, -0.895, 0.25]} >
-      <sphereGeometry args={[0.255, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.5, -0.895, -0.25]} >
-      <sphereGeometry args={[0.35, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.1, -0.895, 0.25]} >
-      <sphereGeometry args={[0.255, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.5, -0.895, 0.55]} >
-      <sphereGeometry args={[0.355, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[0.5, -0.895, 0.55]} >
-      <sphereGeometry args={[0.2, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.5, -0.895, -0.55]} >
-      <sphereGeometry args={[0.3, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.5, -0.895, -0.85]} >
-      <sphereGeometry args={[0.355, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.5, -0.895, 0.85]} >
-      <sphereGeometry args={[0.255, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[-0.8, -0.895, -0.85]} >
-      <sphereGeometry args={[0.355, 32, 16 ]} />
-      <meshStandardMaterial color="#8d888f" />
-      </mesh>
-      <mesh position={[0.9, -0.895, 0.55]} >
-      <sphereGeometry args={[0.355, 32, 16 ]} />
-      <meshStandardMaterial color="#b0aab3" />
-      </mesh>
-      <mesh position={[0.1, -0.895, -0.6]} >
-      <sphereGeometry args={[0.35, 32, 16 ]} />
-      <meshStandardMaterial color="#9e9aa0" />
-      </mesh>
-      <mesh position={[0.3, -0.895, -0.3]} >
-      <sphereGeometry args={[0.155, 32, 16 ]} />
-      <meshStandardMaterial color="#b6b1b8" />
-      </mesh>
-      <mesh position={[0.5, -0.895, -0.6]} >
-      <sphereGeometry args={[0.255, 32, 16 ]} />
-      <meshStandardMaterial color="#afaab1" />
-      </mesh>
-      <mesh position={[0.7, -0.18, -0.6]} >
-      <sphereGeometry args={[0.3, 32, 16 ]} />
-      <meshStandardMaterial color="#87808a" />
-      </mesh>
-      <mesh position={[0.7, -0.6, -0.6]} >
-      <sphereGeometry args={[0.355, 32, 16 ]} />
-      <meshStandardMaterial color="#57505a" />
-      </mesh>
-      <mesh position={[-0.7, -0.6, -0.6]} >
-      <sphereGeometry args={[0.355, 32, 16 ]} />
-      <meshStandardMaterial color="#827c85" />
-      </mesh>
-      <mesh position={[-0.7, -0.18, 0.9]} >
-      <sphereGeometry args={[0.3, 32, 16 ]} />
-      <meshStandardMaterial color="#666566" />
-      </mesh>
-      <mesh position={[-0.7, -0.6, 0.6]} >
-      <sphereGeometry args={[0.3, 32, 16 ]} />
-      <meshStandardMaterial color="#4c4c4d" />
-      </mesh>
-      <mesh position={[0.7, -0.18, 0.9]} >
-      <sphereGeometry args={[0.2, 32, 16 ]} />
-      <meshStandardMaterial color="#716e72" />
-      </mesh>
-      <mesh position={[0.7, -0.6, 0.6]} >
-      <sphereGeometry args={[0.355, 32, 16 ]} />
-      <meshStandardMaterial color="#d0c5d4" />
-      </mesh>
-      <mesh  rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.2, 0]}>
-        <planeBufferGeometry  args={[20, 20]} />
-        <meshBasicMaterial side={DoubleSide} color="#98959b" />
-      </mesh>
-      <Grid sectionColor={-5} cellColor='#565357' renderOrder={-1} position={[0, -1.2, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} fadeDistance={20} />
-
-
-      <OrbitControls/>
-      </mesh>
       
     </group>
+
     
   );
 };

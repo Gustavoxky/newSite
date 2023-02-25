@@ -1,8 +1,10 @@
 import React from "react"
 import Scene from './components/scene'
 import Header from './components/Header'
-import {Container} from './components/Container/index'
 import {Input} from './components/Input'
+import {Me} from './components/Me'
+import {Main} from './components/Main'
+import {Footer} from './components/footer'
 
 const App = () => {
 
@@ -10,8 +12,10 @@ const App = () => {
     <>
       <Header/>
       <Scene/>
-      <Container/>
+      <Me/>
       <Input/>
+      <Main/>
+      <Footer/>
     </>
       
   )

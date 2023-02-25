@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { Title } from '../title'
 
 export const HeaderSC = styled.div`
     margin: 0;
+    align-items: center;
     box-sizing: border-box;
     padding: 0 50px;
     display: flex;
@@ -38,4 +40,11 @@ export const LinkSC = styled.a`
     &:hover {
         color: #9d1dc4;
     }
+`
+
+export const LogoSC = styled(Title)`
+    font-size: 50px;
+    color: #610777;
+    position: relative;
+    right: 800px;
 `

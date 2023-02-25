@@ -1,13 +1,10 @@
 import React from "react"
-import { ContainerSC, ContainerWrapper } from "./containerStyle"
+import { ContainerSC} from "./containerStyle"
+import { IContainerProps } from "./types"
 
-export const Container = () => {
+export const Container = (props: IContainerProps) => {
     return (
-        <ContainerWrapper>
-            <ContainerSC onClick={() => {console.log('click')}}/>
-            <ContainerSC onClick={() => {console.log('click')}}/>
-            <ContainerSC onClick={() => {console.log('click')}}/>
-            <ContainerSC onClick={() => {console.log('click')}}/>
-        </ContainerWrapper>
+            <ContainerSC {...props} onClick={() => {console.log('click')}}/>
+               
     )
 }
