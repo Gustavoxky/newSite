@@ -1,6 +1,5 @@
 import React from "react"
 import { ContainerMeSC, TextMeSC, TitleMeSC } from "./MeStyle"
-import { Container } from "../Container"
 
 export const Me = () => {
     return (

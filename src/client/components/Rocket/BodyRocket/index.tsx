@@ -16,7 +16,7 @@ export const BodyRocket = (props: IRocketProps) => {
   useFrame(() => {
     if (BoxRef.current) {
       // BoxRef.current.rotation.x += 0.01;
-      BoxRef.current.rotation.y += 0.005;
+      BoxRef.current.rotation.y += 0.008;
     }
   });
 

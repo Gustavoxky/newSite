@@ -6,10 +6,11 @@ import {SceneSC} from './SceneStyle'
 import {Nuvem} from '../nuvem'
 import {Sum} from '../sum'
 import { Floor } from "../floor"
+import { ISceneProps } from "./types"
 
-const Scene = () => {
+const Scene = (props: ISceneProps) => {
     return (
-      <SceneSC>
+      <SceneSC {...props}>
         <Canvas shadows dpr={[1, 2]} camera={{ position: [6, 4.5, 10], fov: 50 }}>
         <ambientLight intensity={0.5}/>
         <spotLight position={[-3.5, 2.5, 0.005]} angle={360} penumbra={1} shadow-mapSize={[512, 512]} castShadow />

@@ -34,7 +34,7 @@ export const MenuContentSC = styled.li`
 `
 export const LinkSC = styled.a`
     text-decoration: none;
-    color: #fff;
+    color: #d42ada;
     font-size: 20px;
     font-family: sans-serif;
     &:hover {

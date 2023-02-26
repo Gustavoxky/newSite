@@ -1,17 +1,20 @@
 import React from "react"
-import { Container } from "../Container"
 import { Title } from "../title"
-import { MainSC } from "./MainStyle"
+import { ContainerMainSC, MainSC } from "./MainStyle"
+import {Text} from '../Text'
+import { IMainProps } from "./types"
 
-export const Main = () => {
+export const Main = (props: IMainProps) => {
     return (
         <MainSC>
-            <Container>
+            <ContainerMainSC>
                 <Title content='Technologies'/>
-            </Container>
-            <Container>
+                <Text content=''/>
+            </ContainerMainSC>
+            <ContainerMainSC>
                 <Title content='Languages'/>
-            </Container>
+                <Text content=''/>
+            </ContainerMainSC>
         </MainSC>
     )
 }

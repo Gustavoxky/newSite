@@ -1,23 +1,32 @@
-import React from "react"
+import React, { useState } from "react"
 import Scene from './components/scene'
 import Header from './components/Header'
 import {Input} from './components/Input'
 import {Me} from './components/Me'
 import {Main} from './components/Main'
 import {Footer} from './components/footer'
+import { DarkTheme, LightTheme } from "./Theme"
+import { ThemeProvider} from "styled-components"
+import { GlobalStyle } from "./GlobalStyle"
+import { Sum } from "./components/sum"
 
 const App = () => {
 
+  const [theme, setTheme] = useState('dark');
+  const ThemeToggle = () => {
+    theme === 'dark' ? setTheme('light') : setTheme('dark')
+  }
+
   return (
-    <>
-      <Header/>
-      <Scene/>
-      <Me/>
-      <Input/>
-      <Main/>
-      <Footer/>
-    </>
-      
+    <ThemeProvider theme={theme === 'dark' ? DarkTheme : LightTheme}>
+      <GlobalStyle/>
+        <Header/>
+        <Scene onClick={() => ThemeToggle()}/>
+        <Me/>
+        <Input/>
+        <Main/>
+        <Footer/>
+    </ThemeProvider>      
   )
 }
 

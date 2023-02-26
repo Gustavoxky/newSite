@@ -1,5 +1,5 @@
 import { useFrame } from "@react-three/fiber";
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import { Mesh } from "three";
 
@@ -19,9 +19,10 @@ interface ISumProps {
   
     return (
         <mesh ref={BoxRef} 
-            position={[-4.5, 4.5, 0.005]}>
+              position={[-4.5, 4.5, 0.005]}
+              >
                 <meshStandardMaterial />
-                <sphereGeometry args={[0.25, 32, 16 ]} />
+                <sphereGeometry args={[0.55, 32, 16 ]} />
                 <meshStandardMaterial color="#fffc3c" />
         </mesh>
     )
