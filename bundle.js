@@ -129,7 +129,7 @@
     justify-content: center;
     align-items: center;
     background-color: #0d0e30;
-`,Gw=()=>t.createElement(Vw,null,t.createElement(yw,{content:"Gustavo correia"})),Hw={body:"#c5c5d8"},Ww={body:"#27252e"},jw=(function(e){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];var a=j_.apply(void 0,[e].concat(r)),s="sc-global-"+Z_(JSON.stringify(a)),o=new lw(a,s);function l(e){var n=I_(),r=D_(),i=(0,t.useContext)(nw),a=(0,t.useRef)(n.allocateGSInstance(s)).current;return n.server&&c(a,e,n,i,r),(0,t.useLayoutEffect)((function(){if(!n.server)return c(a,e,n,i,r),function(){return o.removeStyles(a,n)}}),[a,e,n,i,r]),null}function c(e,t,n,r,i){if(o.isStatic)o.renderStyles(e,Jx,n,i);else{var a=Bx({},t,{theme:q_(t,r,l.defaultProps)});o.renderStyles(e,a,n,i)}}return t.memo(l)})`
+`,Gw=()=>t.createElement(Vw,null,t.createElement(yw,{content:"Gustavo correia"})),Hw={body:"#fff"},Ww={body:"#27252e"},jw=(function(e){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];var a=j_.apply(void 0,[e].concat(r)),s="sc-global-"+Z_(JSON.stringify(a)),o=new lw(a,s);function l(e){var n=I_(),r=D_(),i=(0,t.useContext)(nw),a=(0,t.useRef)(n.allocateGSInstance(s)).current;return n.server&&c(a,e,n,i,r),(0,t.useLayoutEffect)((function(){if(!n.server)return c(a,e,n,i,r),function(){return o.removeStyles(a,n)}}),[a,e,n,i,r]),null}function c(e,t,n,r,i){if(o.isStatic)o.renderStyles(e,Jx,n,i);else{var a=Bx({},t,{theme:q_(t,r,l.defaultProps)});o.renderStyles(e,a,n,i)}}return t.memo(l)})`
     body {
         margin: 0;
         background-color: ${e=>e.theme.body};
