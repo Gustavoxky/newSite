@@ -9,7 +9,7 @@ export const Floor = () => {
                 <planeBufferGeometry  args={[120, 60]} />
                 <meshBasicMaterial side={DoubleSide} color="#2d2c2e" />
             </mesh>
-            <Grid sectionColor={0} cellColor='#000000' renderOrder={-1} position={[0, -1.2, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} fadeDistance={60} />
+            <Grid sectionColor={50} cellColor='#beb8a2' renderOrder={-1} position={[0, -1.2, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} fadeDistance={60} />
         </mesh>
         
      )
