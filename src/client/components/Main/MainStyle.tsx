@@ -11,7 +11,7 @@ export const MainSC = styled.div`
 `
 export const ContainerMainSC = styled(Container)`
     &:hover {
-        background-color: #3c2c7c;
+        background-color: #1e1e20;
         box-shadow: 0 0 15px 10px #141414;
         cursor: pointer;
     }

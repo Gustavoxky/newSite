@@ -6,5 +6,5 @@ export const FooterSC = styled.div`
     height: 100px;
     justify-content: center;
     align-items: center;
-    background-color: #0d0e30;
+    background-color: #121213;
 `
